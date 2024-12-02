@@ -1,7 +1,7 @@
 import {
     dataLocIdsCol1,
     dataLocIdsCol2
-} from './data.js';
+} from '../data.js';
 
 
 //dataLocIdsCol1
