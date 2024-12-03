@@ -1,7 +1,7 @@
 import {
     dataLocIdsCol1,
     dataLocIdsCol2
-} from '../data.js';
+} from './data-d1.js';
 
 let score = 0;
 

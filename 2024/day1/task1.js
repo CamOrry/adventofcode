@@ -1,11 +1,8 @@
 import {
     dataLocIdsCol1,
     dataLocIdsCol2
-} from '../data.js';
+} from './data-d1.js';
 
-
-//dataLocIdsCol1
-//dataLocIdsCol2
 const col1 = dataLocIdsCol1.sort();
 const col2 = dataLocIdsCol2.sort();
 
