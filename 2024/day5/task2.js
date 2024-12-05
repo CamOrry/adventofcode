@@ -1,7 +1,6 @@
 import { operations, rules } from './data-d5.js';
 
-const r = rules;
-const o = operations;
+const start = performance.now();
 
 let sum = 0;
 
@@ -22,4 +21,10 @@ sum = operations
     }).map(operation => operation.sort((vB, vA) => (slowAF_hibaSearchBasedOnRules(vB, vA) ? 1 : -1)))
     .reduce((prev, curr) => prev + curr[Math.floor(curr.length / 2)], 0);
 
+const end = performance.now();
+
 console.log(sum);
+
+console.log('---------------------');
+console.log(end - start + ' ms');
+console.log('---------------------');

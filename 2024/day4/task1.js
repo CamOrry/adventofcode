@@ -1,5 +1,7 @@
 import { data } from './data-d4.js';
 
+const start = performance.now();
+
 let db = 0;
 
 const xmas = "XMAS";
@@ -37,4 +39,10 @@ data.forEach((row, ridx) => {
     });
 });
 
+const end = performance.now();
+
 console.log(db);
+
+console.log('---------------------');
+console.log(end - start + ' ms');
+console.log('---------------------');

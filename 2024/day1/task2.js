@@ -3,6 +3,8 @@ import {
     dataLocIdsCol2
 } from './data-d1.js';
 
+const start = performance.now();
+
 let score = 0;
 
 dataLocIdsCol1.forEach((id1) => {
@@ -10,4 +12,10 @@ dataLocIdsCol1.forEach((id1) => {
     score += (id1 * multiplier);
 });
 
+const end = performance.now();
+
 console.log(score);
+
+console.log('---------------------');
+console.log(end - start + ' ms');
+console.log('---------------------');

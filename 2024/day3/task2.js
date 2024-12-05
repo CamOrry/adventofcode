@@ -1,5 +1,7 @@
 import { corruptedMemory } from './data-d3.js';
 
+const start = performance.now();
+
 const mul = "mul(";
 const close = ")";
 const splitter = ",";
@@ -37,4 +39,10 @@ let recursiveDeCorrupter = (memory) => {
     return (Number.parseInt(split[0]) * Number.parseInt(split[1])) + recursiveDeCorrupter(memory.slice((start + mul.length)));
 };
 
+const end = performance.now();
+
 console.log(recursiveDeCorrupter(corruptedMemory));
+
+console.log('---------------------');
+console.log(end - start + ' ms');
+console.log('---------------------');

@@ -1,5 +1,7 @@
 import { data } from './data-d2.js';
 
+const start = performance.now();
+
 let safe = 0;
 
 data.forEach(dat => {
@@ -34,4 +36,10 @@ data.forEach(dat => {
     safe += (isSafe ? 1 : 0);
 });
 
+const end = performance.now();
+
 console.log(safe);
+
+console.log('---------------------');
+console.log(end - start + ' ms');
+console.log('---------------------');
