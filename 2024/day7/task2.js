@@ -1,4 +1,4 @@
-import { data } from './data.d7.js';
+import { data } from './data-d7.js';
 
 const start = performance.now();
 
