@@ -53,7 +53,7 @@ const recursiveGuardStep = (x, y, direction) => {
     let nextDirection = direction;
 
     while (map[x + nextDirection.movement.x][y + nextDirection.movement.y] === obstacle) {
-        nextDirection = direction.next;
+        nextDirection = nextDirection.next;
     }
 
     return recursiveGuardStep(x + nextDirection.movement.x, y + nextDirection.movement.y, nextDirection);
