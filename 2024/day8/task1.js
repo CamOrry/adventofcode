@@ -1,7 +1,5 @@
 import { map } from './data-d8.js';
 
-let m = map;
-
 const start = performance.now();
 
 const coords = [];
